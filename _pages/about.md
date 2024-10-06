@@ -9,8 +9,6 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    #<p>Postdoctoral Fellow</p>
-    #<p>Bauer Human-Centered AI Institute</p>
     <p>Mobile: 919-599-6647</p>
 
 news: false # includes a list of news items
