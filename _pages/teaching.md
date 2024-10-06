@@ -9,8 +9,8 @@ nav_order: 3
 
 * HPE Data Science Institute, University of Houston
 
-  1. Data Analysis and Visualization in Excel $\&$ Power BI (Ph.D., MBA, MS), Fall 2023
-  2. Data Analysis and Visualization in Excel $\&$ Power BI (Ph.D., MBA, MS), Spring 2025 (scheduled)
+  1. Data Analysis and Visualization in Excel & Power BI (Ph.D., MBA, MS), Fall 2023
+  2. Data Analysis and Visualization in Excel & Power BI (Ph.D., MBA, MS), Spring 2025 (scheduled)
 
 * Marshall School of Business, University of Southern California
 
