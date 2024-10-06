@@ -6,7 +6,7 @@
     "email": "jtian6@central.uh.edu",
     "phone": "(919) 599-6647",
     "url": "https://jtian51.github.io/jingyiinformed",
-    <!--"summary": "",-->
+    "summary": "",
     "location": {
       "address": "Melcher Hall 290A",
       "postalCode": "TX, 77004",
@@ -96,7 +96,7 @@
       "reference": "FOUNDER AND DIRECTOR\\Endowed C. T. Bauer Chair of AI"
     },
   ],
- <!-- "projects": [
+ "projects": [
     {
       "name": "Quantum Computing",
       "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
@@ -105,5 +105,5 @@
       "endDate": "2018-01-01",
       "url": "https://example.com"
     }
-  ]-->
+  ]
 }
