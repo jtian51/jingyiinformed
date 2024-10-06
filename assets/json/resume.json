@@ -52,7 +52,7 @@
       "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
     }
   ],
-  "Working Papers": [
+  "working papers": [
     {
       "name": "Algorithmic Bidding in Procurement Auctions, with Meng Li and Xianghua, Wu",
       "url": "https://drive.google.com/file/d/1UVDtQDdVut3rDfC-NN9zEkXM-YCm99f6/view?usp=sharing",
@@ -68,7 +68,7 @@
       "summary": "Establish a two-tired model capturing how a decentralized platform optimize through implementing a centralized data-driven matching protocol, featuring on the information design in the digital multisided ecosystem."
     }
   ],
-  "Research Interests": [
+  "research interests": [
     {
       "name": "Applied AI/ML",
       "icon": "fa-solid fa-tag",
