@@ -4,7 +4,7 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 5
-cv_pdf: mycv_pdf.pdf
+cv_pdf: Jingyi_Tian_CV_2024.pdf
 description: Updated on Sept. 2024.
 toc:
   sidebar: left
