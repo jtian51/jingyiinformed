@@ -4,7 +4,7 @@ title: Algorithmic Bidding in Procurement Auctions
 description: Deep-learning algorithms can bid above cost to inflate the price, leading to critical efficiency losses on supply chains. 
 img: assets/img/Deep_Learning_Applications.jpg
 importance: 1
-category: work
+category: working papers
 related_publications: false
 ---
 
