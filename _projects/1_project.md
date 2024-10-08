@@ -1,81 +1,89 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Algorithmic Bidding in Procurement Auctions
+description: Deep-learning algorithms can bid above cost to inflate the price, leading to critical efficiency losses on supply chains. 
+img: assets/img/Deep_Learning_Applications.jpg
 importance: 1
 category: work
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+(Full draft is available <a href="https://drive.google.com/file/d/1UVDtQDdVut3rDfC-NN9zEkXM-YCm99f6/view?usp=share_link">here</a>)
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Abstract  
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+As online auction platforms evolve, bidders' use of artificial intelligence (AI) has become increasingly prevalent for strategic advantages. This paper investigates the algorithmic bidding behavior in second-price procurement auctions, focusing on AI bidders trained by a model-free value-based reinforcement learning algorithm: the Deep Q-Network (DQN). Our experiments reveal a distinct tendency for overbidding (to bid above the cost) as the algorithm converges, shown in the Figure 1 below. 
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-12 d-flex justify-content-center mt-1 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/comparebid.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Figure 1. Average Bids at Stable Convergences with N=2 and 10
 </div>
+
+The extent of overbidding intensifies with increased competition, captured by the N as the number of the bidders, exposing a discrepancy between the algorithmic behavior and the strategy predicted by the Nash equilibrium. To explain the underlying mechanism, we develop an analytical model that characterizes an algorithmic equilibrium within the DQN framework, as the Figure 2 below depicts, demonstrating how overbidding arises from internalizing the positive externalities it generates on opponents' rewards.
+
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-12 d-flex justify-content-center mt-1 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/idqn.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Figure 2. Deep Q-Neural Network Learning Mechanism
 </div>
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+In particular, we show that the "incentive" to overbid arises whenever the positive externalities of overbidding internalized through the feedbacks observed from the environment outweigh the direct negative impact it has on the bidder's reward, illustrated by the Figure 3 below: 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row">
+    <div class="col-sm-12 d-flex justify-content-center mt-1 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/overbideffects.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Figure 3. "Incentive" to Overbid Generated through DQN
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+We further study conditions that promote overbidding, underscoring the challenges posed to existing antitrust regulations. In response, apart from reducing the competition intensity by limiting the number of bidders, we propose strategies for refining market environments and adjusting information input to mitigate overbidding, supported by assessments through further experiments with specific treatments. In the results shown in Figure 4 and Figure 5 below, we can see that the inflation in the bids (or the price in the procurement auction) can be effectively mitigated when there is a lower reserve as the price ceiling and whenever there is a limited number of bidders with an additional information about the previous lowest bid observed by DQN every round. 
 
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+<div class="row">
+    <div class="col-sm-6 d-flex justify-content-center mt-1 mt-md-0"">
+        {% include figure.liquid loading="eager" path="assets/img/comparebidmax2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-6 d-flex justify-content-center mt-1 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/comparebidmax10.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
-```
+<div class="caption">
+    Figure 4. Average Bids with Lower Reserve
+</div>
 
-{% endraw %}
+<div class="row">
+    <div class="col-sm-6 d-flex justify-content-center mt-1 mt-md-0"">
+        {% include figure.liquid loading="eager" path="assets/img/information2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-6 d-flex justify-content-center mt-1 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/information10.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Figure 5. Average Bids with Additional Information to Bidders 
+</div>
+
+We also extend to the case where the auctioneer adaptively anchors the reserve to prevent overpaying. However, it shows, in the Figure 6 below, this would not reduce the risk of overbidding as the DQN bidders can learn about this anchoring on reserve and overbid to fix it at a high level. 
+
+<div class="row">
+    <div class="col-sm-6 d-flex justify-content-center mt-1 mt-md-0"">
+        {% include figure.liquid loading="eager" path="assets/img/anchor2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-6 d-flex justify-content-center mt-1 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/anchor10.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Figure 6. Average Bids with Anchoring on Reserves
+</div>
+
+Based on these findings, the study offers critical implications for regulatory oversight, advocating for the careful integration of AI in procurement auction markets to foster technological innovation while maintaining effective governance.
+
