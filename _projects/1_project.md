@@ -5,7 +5,7 @@ description: Deep-learning algorithms can bid above cost to inflate the price, l
 img: assets/img/Deep_Learning_Applications.jpg
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
 (Full draft is available <a href="https://drive.google.com/file/d/1UVDtQDdVut3rDfC-NN9zEkXM-YCm99f6/view?usp=share_link">here</a>)
