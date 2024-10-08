@@ -48,7 +48,7 @@ In particular, we show that the "incentive" to overbid arises whenever the posit
 We further study conditions that promote overbidding, underscoring the challenges posed to existing antitrust regulations. In response, apart from reducing the competition intensity by limiting the number of bidders, we propose strategies for refining market environments and adjusting information input to mitigate overbidding, supported by assessments through further experiments with specific treatments. In the results shown in Figure 4 and Figure 5 below, we can see that the inflation in the bids (or the price in the procurement auction) can be effectively mitigated when there is a lower reserve as the price ceiling and whenever there is a limited number of bidders with an additional information about the previous lowest bid observed by DQN every round. 
 
 <div class="row">
-    <div class="col-sm-6 d-flex justify-content-center mt-1 mt-md-0"">
+    <div class="col-sm-6 d-flex justify-content-center mt-1 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/comparebidmax2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-6 d-flex justify-content-center mt-1 mt-md-0">
@@ -60,7 +60,7 @@ We further study conditions that promote overbidding, underscoring the challenge
 </div>
 
 <div class="row">
-    <div class="col-sm-6 d-flex justify-content-center mt-1 mt-md-0"">
+    <div class="col-sm-6 d-flex justify-content-center mt-1 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/information2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-6 d-flex justify-content-center mt-1 mt-md-0">
@@ -74,7 +74,7 @@ We further study conditions that promote overbidding, underscoring the challenge
 We also extend to the case where the auctioneer adaptively anchors the reserve to prevent overpaying. However, it shows, in the Figure 6 below, this would not reduce the risk of overbidding as the DQN bidders can learn about this anchoring on reserve and overbid to fix it at a high level. 
 
 <div class="row">
-    <div class="col-sm-6 d-flex justify-content-center mt-1 mt-md-0"">
+    <div class="col-sm-6 d-flex justify-content-center mt-1 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/anchor2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-6 d-flex justify-content-center mt-1 mt-md-0">
