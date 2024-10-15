@@ -13,9 +13,25 @@ Abstract
 
 This paper investigates the design of an optimal matching protocol for a two-sided platform, where profits are determined by subsequent decentralized bargaining between matched pairs of buyers and sellers facilitated by a centralized protocol. 
 
+<div class="row">
+    <div class="col-sm-12 d-flex justify-content-center mt-1 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/platform.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Figure 1. Matching Platform with Decentralized Bargaining 
+</div>
 
 The study focuses on horizontally differentiated products and heterogeneous buyer preferences. We introduce the concept of match quality as a measure for assessing how well a product aligns with a buyer’s preferences. While the platform can achieve the highest match quality by pairing buyers with their optimal matches and facilitating immediate acceptance at the bargaining equilibrium, we show that this strategy is suboptimal in scenarios where match failures occur due to supply shortages, as shown by the comparison between figure (a), the exact matching, and figure (b), the broad matching with mismatches, below:
 
+<div class="row">
+    <div class="col-sm-12 d-flex justify-content-center mt-1 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/improvebymis.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Figure 2. Improvement by Introducing Mismatches
+</div>
 
 The losses from the red segments of match failures in (a) will be reduced in size by the increments from a thicker market with the new mismatches in the yellow-shaded area and the new delayed exact matches in the green-shaded area in (b).
 
