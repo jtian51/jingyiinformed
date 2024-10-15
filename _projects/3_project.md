@@ -15,7 +15,7 @@ This paper investigates the design of an optimal matching protocol for a two-sid
 
 <div class="row">
     <div class="col-sm-12 d-flex justify-content-center mt-1 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/platform.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/platform2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
