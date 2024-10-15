@@ -8,6 +8,6 @@ children:
   - title: news
     permalink: /news/
   - title: divider
-  - title: blog
-    permalink: /blog/
+  #- title: blog
+    #permalink: /blog/
 ---
